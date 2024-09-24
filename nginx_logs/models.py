@@ -10,7 +10,7 @@ class ParseLogs(models.Model):
     date_log = models.DateTimeField(verbose_name='Дата лога', **options)
     method = models.CharField(max_length=100, verbose_name='HTTP метод',
                               **options)
-    url = models.CharField(max_length=200, verbose_name='URL', **options)
+    uri = models.CharField(max_length=200, verbose_name='URI', **options)
     status_code = models.IntegerField(verbose_name='HTTP статус код',
                                       **options)
     size = models.IntegerField(verbose_name='Размер ответа', **options)
