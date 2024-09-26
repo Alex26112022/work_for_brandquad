@@ -8,9 +8,9 @@ from nginx_logs.models import ParseLogs
 class ParseLogsTestCase(APITestCase):
     def setUp(self):
         self.parse_logs = ParseLogs.objects.create(ip_address='127.0.0.1',
-                                                   date_log='2022-01-01 12:00:00',
+                                                   date_log='2022-01-01 12:00:00',  # noqa
                                                    method='GET',
-                                                   uri='http://93.180.71.3/downloads/product_1',
+                                                   uri='http://93.180.71.3/downloads/product_1',  # noqa
                                                    status_code=200,
                                                    size=100)
 
